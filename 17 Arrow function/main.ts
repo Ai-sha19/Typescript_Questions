@@ -73,6 +73,20 @@ copyofArray.pop();
 console.log(copyofArray);
 console.log(orignalArray);
 
+let studentData = {
+    name : 'ali',
+    isEnrolled : true,
+    id : 1001,
+    address : {city : 'karachi', country : 'Pakistan'}
+}
+
+
+for(let key in studentData){
+    console.log(`${key} ${studentData[key]}`);
+}
+
+
+
 
 
 

@@ -41,7 +41,10 @@ console.log(greet("Jane"));
 Explain the concept of a rest parameter in typescript. write a typeScript Arrow function named `friends` that accepts any name of parameters and returns all name in array.
 
 For example:
-- If `name('taha', 'Ahmed', 'Ali'), it should return ['taha', 'Ahmed', 'Ali'].*/
+- If `name('taha', 'Ahmed', 'Ali'), it should return ['taha', 'Ahmed', 'Ali'].
+
+Rest Parameter in TypeScript:
+The rest parameter syntax (...) in TypeScript allows a function to accept an indefinite number of arguments as an array. It enables a function to take an arbitrary number of arguments, rather than a fixed number.*/
 var friends = function () {
     var name = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -55,7 +58,10 @@ console.log(friends('Taha', 'Ahmed', 'Ali'));
 Explain the concept of a spread operator in typescript. write a typeScript Arrow function named `friend` that accepts any name of parameters and returns all name in array.then make a copy of that name and pop last name form array. make sure your orignal array should not be change.
 
 For example:
-- If `name('taha', 'Ahmed', 'Ali'), it should return ['taha', 'Ahmed', 'Ali'].*/
+- If `name('taha', 'Ahmed', 'Ali'), it should return ['taha', 'Ahmed', 'Ali'].
+
+Spread Operator in TypeScript:
+The spread operator (...) in TypeScript is used to expand an iterable object into individual elements. It is used in array literals, function calls, and object literals.*/
 var friend = function () {
     var name = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -68,3 +74,12 @@ var copyofArray = __spreadArray([], orignalArray, true);
 copyofArray.pop();
 console.log(copyofArray);
 console.log(orignalArray);
+var studentData = {
+    name: 'ali',
+    isEnrolled: true,
+    id: 1001,
+    address: { city: 'karachi', country: 'Pakistan' }
+};
+for (var key in studentData) {
+    console.log("".concat(key, " ").concat(studentData[key]));
+}

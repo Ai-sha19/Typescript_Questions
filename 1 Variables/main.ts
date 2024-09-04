@@ -23,6 +23,12 @@ console.log(number1);
    Its data type should be string (explicitly).*/
 
    const friendName: string = "Afshan";
+
+
+   function nam(name:string= 'ali',country :string) {
+    return name + country 
+   }
+   console.log(nam('pal'));
    
  
 
